@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Account Balance</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="bg-text">
+    <header>
+      <h1>Account Balance</h1>
+    </header>
+
+    <div class="input-container">
+      <form>
+        <input id="description" type="text" placeholder="Enter description"
+          required autofocus />
+        <input id="amount" type="number" placeholder="Enter amount" required step="any"/>
+
+        <select>
+          <option value="Income" id="income">Income</option>
+          <option value="Expense" id="expense">Expense</option>
+        </select>
+
+        <button class="add">Add</button>
+      </form>
+    </div>
+    <button class="reset">Reset</button>
+
+    <main class="container">
+      <div class="info">
+        <div class="title">Income</div>
+        <hr/>
+        <div class="wrapper income-wrapper"></div>
+      </div>
+      <div class="info">
+        <div class="title">Expense</div>
+        <hr/>
+        <div class="wrapper expense-wrapper"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="title">Balance</div>
+      <hr/>
+      <div class="balance-text">My account balance: <span class="result"></span></div>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

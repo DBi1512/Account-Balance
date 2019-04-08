@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 18px;
+}
+
+.bg-image {
+  background-image: url("../coins.jpg");
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset {
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+}
+
+select {
+  width: 10vw;
+  height: 41px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline
+}
+
+.wrapper {
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 95%;
+  margin: 0 auto;
+}
+
+li {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* li:hover .delete{
+  opacity: 1;
+} */
+
+span {
+  width: 100%;
+  text-align: right;
+}
+
+span:last-child {
+  margin-left: 30px;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.delete {
+  width: 5%;
+  opacity: 0;
+}
+
+.delete:hover {
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+  padding: 5px;
+}
+
+footer hr {
+  width: 50%;
+}
+
+.balance-text {
+  margin-top: 30px;
+}
