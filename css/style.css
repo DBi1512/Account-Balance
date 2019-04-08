@@ -114,6 +114,7 @@ li {
   padding: 10px;
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: flex-end;
 }
 
@@ -157,4 +158,10 @@ footer hr {
 
 footer .balance-text {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 512px) {
+  li {
+    flex-wrap: wrap;
+  }
 }
