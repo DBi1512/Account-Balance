@@ -32,10 +32,12 @@ const displayDateTime = () => {
 
 const createList = (id, title, num, time, index) => {
   let listItem = `<li class="list-item">
-      <span>${time}</span>
+      <span class="time">${time}</span>
       <span>${title}</span>
-      <span>${Number(num).toLocaleString()} €</span>
-      <a><button class="delete" id="${index}">Delete</button></a>
+      <span class="number-delete">
+        <div class="number">${Number(num).toLocaleString()} €</div>
+        <button class="delete" id="${index}">Delete</button>
+      </span>
     </li>
     `;
   if (id == "Income") {
