@@ -12,6 +12,7 @@ html {
   font-size: 18px;
 }
 
+/* blurry background & full text display */
 .bg-image {
   background-image: url("../coins.jpg");
   filter: blur(1px);
@@ -53,7 +54,7 @@ header {
   padding: 0 20px;
   display: flex;
   justify-content: center;
-  align-items: baseline
+  align-items: baseline;
 }
 
 input {
@@ -95,7 +96,7 @@ select {
   padding: 0 20px;
   display: flex;
   justify-content: space-around;
-  align-items: baseline
+  align-items: baseline;
 }
 
 .wrapper {
@@ -116,17 +117,24 @@ li {
   justify-content: flex-end;
 }
 
-/* li:hover .delete{
-  opacity: 1;
-} */
-
-span {
-  width: 100%;
-  text-align: right;
+/* show / hide delete button */
+li:hover .delete {
+  display: inline-block;
 }
 
-span:last-child {
-  margin-left: 30px;
+.delete {
+  padding: 5px 10px;
+  display: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+li > span {
+  border-bottom: 1px solid #333333;
+  margin: 0 5px;
+  width: 100%;
+  text-align: right;
 }
 
 footer {
@@ -136,31 +144,17 @@ footer {
   text-align: center;
 }
 
-.title {
+footer .title {
   font-size: 25px;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.delete {
-  width: 5%;
-  opacity: 0;
-}
-
-.delete:hover {
-  border-radius: 5px;
-  margin-left: 5px;
-  width: 100%;
-  opacity: 1;
-  cursor: pointer;
-  padding: 5px;
-}
-
 footer hr {
   width: 50%;
 }
 
-.balance-text {
+footer .balance-text {
   margin-top: 30px;
 }
